@@ -7,7 +7,7 @@
 # Pull base image.
 FROM dockerfile/java:oracle-java8
 
-ENV ES_PKG_NAME elasticsearch-1.5.0
+ENV ES_PKG_NAME elasticsearch-7.9.1-linux-x86_64
 
 # Install Elasticsearch.
 RUN \
@@ -34,3 +34,4 @@ CMD ["/elasticsearch/bin/elasticsearch"]
 #   - 9300: transport
 EXPOSE 9200
 EXPOSE 9300
+
